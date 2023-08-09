@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nav_drawer_menu">Navigation drawer menu</string>
+    <string name="bottom_nav_student">Student List</string>
+    <string name="bottom_nav_plan">Plan</string>
+
+    <string-array name="gender_array">
+        <item>Any gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+</resources>
