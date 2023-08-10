@@ -3,11 +3,20 @@
     <string name="nav_drawer_menu">Navigation drawer menu</string>
     <string name="bottom_nav_student">Student List</string>
     <string name="bottom_nav_plan">Plan</string>
-
+    <string name="add_student_fab">Add student FAB</string>
+    <string name="dropdown_icon">Dropdown icon</string>
+    <string name="student_image">Image of a student</string>
+    <string name="remove_student">Remove student from list button</string>
+    <string name="default_image_path">file:///android_asset/images/a.jng</string>
     <string-array name="gender_array">
         <item>Any gender</item>
         <item>Female</item>
         <item>Male</item>
+    </string-array>
+
+    <string-array name="study_period_array">
+        <item>New</item>
+        <item>Old</item>
     </string-array>
 
 </resources>

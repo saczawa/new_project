@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 import java.time.DayOfWeek
+import java.time.LocalDateTime
 
 @Dao
 interface StudentDao {
@@ -40,6 +41,17 @@ interface StudentDao {
     @Query("SELECT * FROM students WHERE day = :dayOfWeek")
     fun findStudentsByDay(dayOfWeek: DayOfWeek): LiveData<List<Student>>
 
+    @Query("""SELECT * FROM students WHERE howLongStudent
+        BETWEEN :startDate AND :endDate ORDER BY :startDate DESC""")
+    fun getStudentsAdmittedBetweenDates(
+        startDate: LocalDateTime,
+        endDate: LocalDateTime
+    ): LiveData<List<Student>>
+
+    @Query("SELECT * FROM students WHERE gender = :gender")
+    fun getStudentsByGender(
+        gender: Gender
+    ): LiveData<List<Student>>
 //    @Query("SELECT * FROM student WHERE LOWER(firstName) LIKE LOWER(:query) OR LOWER(lastName) LIKE LOWER(:query)")
 //    suspend fun searchStudents(query: String): List<Student>
 
