@@ -38,12 +38,5 @@ class MyApplicationRepository(application: Application) {
         gender: Gender
     ) = studentDao.getStudentsByGender(gender)
 
-//    suspend fun searchStudents(query: String): List<Student> {
-//        return studentDao.searchStudents("%$query%")
-//    }
-
-
-
-
-
+    fun searchStudentsByName(query : String) = studentDao.searchStudentsByName(query)
 }

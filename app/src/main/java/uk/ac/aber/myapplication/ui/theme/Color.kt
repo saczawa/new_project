@@ -4,9 +4,9 @@ import androidx.compose.ui.graphics.Color
 
 val md_theme_light_primary = Color(0xFF740001) //deep red
 val md_theme_light_onPrimary = Color(0xFFFFFFFF) // white
-val md_theme_light_primaryContainer = Color(0xFFC0A080) //light gold
+val md_theme_light_primaryContainer = Color(0xFFDAA520) // gold
 val md_theme_light_onPrimaryContainer = Color(0xFF341100) // deep brown
-val md_theme_light_secondary = Color(0xFFDAA520) // gold
+val md_theme_light_secondary = Color(0xFFC0A080) // light gold
 val md_theme_light_onSecondary = Color(0xFFFFFFFF) // white
 val md_theme_light_secondaryContainer = Color(0xFFFFDBCB) //light gold
 val md_theme_light_onSecondaryContainer = Color(0xFF2B160B) // deep brown
@@ -22,7 +22,7 @@ val md_theme_light_background = Color(0xFFFFFBFF) // white
 val md_theme_light_onBackground = Color(0xFF201A18) // deep brown
 val md_theme_light_surface = Color(0xFFFFFBFF) // white
 val md_theme_light_onSurface = Color(0xFF201A18) // deep brown
-val md_theme_light_surfaceVariant = Color(0xFFC0A080) // light gold
+val md_theme_light_surfaceVariant = Color(0xFFDAA520) // light gold
 val md_theme_light_onSurfaceVariant = Color(0xFF52443D) // deep brown
 val md_theme_light_outline = Color(0xFF85736C) // goldish brown
 val md_theme_light_inverseOnSurface = Color(0xFFFBEEE9) // light red

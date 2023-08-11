@@ -1,6 +1,7 @@
 package uk.ac.aber.myapplication.model
 
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -12,10 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import uk.ac.aber.myapplication.R
 
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun SearchArea(
     modifier: Modifier = Modifier,
@@ -24,8 +25,7 @@ fun SearchArea(
     studyPeriodList: List<String>,
     updateSearch: (StudentSearch) -> Unit = {},
 ) {
-
-    var dialogIsOpen by rememberSaveable { mutableStateOf(false) }
+    var searchText by rememberSaveable { mutableStateOf("") }
 
     Card(
         shape = RectangleShape,
@@ -62,6 +62,25 @@ fun SearchArea(
                         )
                     )
                 }
+            )
+        }
+        Row{
+            TextField(
+                value = searchText,
+                onValueChange = {
+                    searchText = it
+                    updateSearch(
+                        StudentSearch(
+                            nameQuery = it,
+                            gender = studentSearch.gender,
+                            studyPeriod = studentSearch.studyPeriod
+                        )
+                    )
+                },
+                label = { Text(stringResource(id = R.string.search_student)) },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp)
             )
         }
     }

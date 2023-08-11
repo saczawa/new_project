@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">E-Tutoring</string>
     <string name="nav_drawer_menu">Navigation drawer menu</string>
     <string name="bottom_nav_student">Student List</string>
     <string name="bottom_nav_plan">Plan</string>
@@ -7,7 +7,28 @@
     <string name="dropdown_icon">Dropdown icon</string>
     <string name="student_image">Image of a student</string>
     <string name="remove_student">Remove student from list button</string>
-    <string name="default_image_path">file:///android_asset/images/a.jng</string>
+    <string name="default_image_path">file:///android_asset/images/default.jpg</string>
+    <string name="label_school">School</string>
+    <string name="label_year">Class</string>
+    <string name="label_price">Fee</string>
+    <string name="search_student">Search Student</string>
+    <string name="add_student">Add student floating button</string>
+    <string name="addStudent">Add student</string>
+    <string name="goBack">Go back button</string>
+    <string name="enterDescription">Enter description:</string>
+    <string name="student_first_name">Name:</string>
+    <string name="student_last_name">Surname:</string>
+    <string name="currency_symbol">£</string>
+    <string name="price_label">Price</string>
+    <string name="cat_image">Image of a student</string>
+    <string name="enterImageMsg">Tap image to add/replace image</string>
+    <string name="cannot_create_image_file">Cannot take a picture, possibly insufficient space</string>
+    <string name="cannotTakePicture">Unable to start Camera app</string>
+    <string name="student_phone_number">Strudent\'s phone number</string>
+    <string name="student_phone_number_parent1">Student\'s parent phone number</string>
+    <string name="student_phone_number_parent2">Student\'s parent 2 phone number</string>
+
+
     <string-array name="gender_array">
         <item>Any gender</item>
         <item>Female</item>
@@ -18,5 +39,37 @@
         <item>New</item>
         <item>Old</item>
     </string-array>
+
+    <string-array name="day_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="school_types_array">
+        <item>Nursery/Preschool</item>
+        <item>Primary School</item>
+        <item>Secondary School</item>
+        <item>College</item>
+        <item>University</item>
+    </string-array>
+
+    <string-array name="class_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+
 
 </resources>

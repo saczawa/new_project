@@ -52,7 +52,8 @@ interface StudentDao {
     fun getStudentsByGender(
         gender: Gender
     ): LiveData<List<Student>>
-//    @Query("SELECT * FROM student WHERE LOWER(firstName) LIKE LOWER(:query) OR LOWER(lastName) LIKE LOWER(:query)")
-//    suspend fun searchStudents(query: String): List<Student>
+
+    @Query("SELECT * FROM students WHERE LOWER(firstName) LIKE LOWER(:query) OR LOWER(lastName) LIKE LOWER(:query)")
+    fun searchStudentsByName(query: String): Flow<List<Student>>
 
 }

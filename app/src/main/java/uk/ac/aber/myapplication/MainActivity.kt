@@ -12,18 +12,15 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import uk.ac.aber.myapplication.model.StudentViewModel
 import uk.ac.aber.myapplication.ui.navigation.Screen
-//import uk.ac.aber.myapplication.ui.screens.AddStudentScreen
-import uk.ac.aber.myapplication.ui.screens.allstudents.StudentScreen
+//import uk.ac.aber.myapplication.ui.screens.LandingScreen
+import uk.ac.aber.myapplication.ui.screens.addStudent.AddStudentScreenTopLevel
 import uk.ac.aber.myapplication.ui.screens.allstudents.StudentScreenTopLevel
-import uk.ac.aber.myapplication.ui.screens.plan.PlanScreen
 import uk.ac.aber.myapplication.ui.screens.plan.PlanScreenTopLevel
 
 class MainActivity : ComponentActivity() {
@@ -63,7 +60,8 @@ class MainActivity : ComponentActivity() {
         ) {
             composable(Screen.Student.route) { StudentScreenTopLevel(navController, studentViewModel) }
             composable(Screen.Plan.route) { PlanScreenTopLevel(navController, studentViewModel) }
-//            composable(Screen.AddStudent.route) { AddStudentScreen(navController) }
+            composable(Screen.AddStudent.route) { AddStudentScreenTopLevel(navController) }
+//            composable(Screen.Landing.route) { LandingScreen(navController) }
 
         }
     }

@@ -80,7 +80,7 @@ abstract class  MyApplicationRoomDatabase : RoomDatabase() {
                 "1234567654",
                 "1234567654",
                 Gender.MALE,
-                DayOfWeek.SUNDAY,
+                DayOfWeek.WEDNESDAY,
                 LocalTime.of(10, 0),
                 0,
                 50,
@@ -88,13 +88,31 @@ abstract class  MyApplicationRoomDatabase : RoomDatabase() {
                 1,
                 newStudent,
                 LocalDateTime.now(),
-                "a.png"
+                "file:///android_asset/images/a.jpg"
             )
             val student2 = Student(
                 0,
-                "Norbert",
-                "Gierczak",
+                "Clara",
+                "Logan",
                 "1234567654",
+                "1234567654",
+                "1234567654",
+                Gender.FEMALE,
+                DayOfWeek.MONDAY,
+                LocalTime.of(7, 0),
+                0,
+                50,
+                "Primary",
+                3,
+                oldStudent,
+                LocalDateTime.now(),
+                "file:///android_asset/images/b.jpg"
+            )
+            val student3 = Student(
+                0,
+                "Paul",
+                "Smith",
+                "741852963",
                 "1234567654",
                 "1234567654",
                 Gender.MALE,
@@ -106,11 +124,70 @@ abstract class  MyApplicationRoomDatabase : RoomDatabase() {
                 1,
                 oldStudent,
                 LocalDateTime.now(),
-                "a.png"
+                "file:///android_asset/images/c.jpg"
+            )
+
+            val student4 = Student(
+                0,
+                "Robert",
+                "Lewandowski",
+                "789456125",
+                "1234567654",
+                "1234567654",
+                Gender.MALE,
+                DayOfWeek.TUESDAY,
+                LocalTime.of(8, 0),
+                0,
+                60,
+                "Secondary",
+                3,
+                oldStudent,
+                LocalDateTime.now(),
+                "file:///android_asset/images/d.jpg"
+            )
+            val student5 = Student(
+                0,
+                "Jenny",
+                "Moore",
+                "789456125",
+                "1234567654",
+                "1234567654",
+                Gender.FEMALE,
+                DayOfWeek.THURSDAY,
+                LocalTime.of(9, 0),
+                0,
+                60,
+                "Secondary",
+                1,
+                oldStudent,
+                LocalDateTime.now(),
+                "file:///android_asset/images/e.jpg"
+            )
+            val student6 = Student(
+                0,
+                "Matt",
+                "Starling",
+                "963852741",
+                "1234567654",
+                "1234567654",
+                Gender.MALE,
+                DayOfWeek.FRIDAY,
+                LocalTime.of(12, 0),
+                0,
+                70,
+                "Secondary",
+                2,
+                oldStudent,
+                LocalDateTime.now(),
+                "file:///android_asset/images/h.jpg"
             )
             val studentList = mutableListOf(
                 student1,
-                student2
+                student2,
+                student3,
+                student4,
+                student5,
+                student6
             )
 
 

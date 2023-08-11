@@ -113,7 +113,7 @@ fun StudentScreen(
             }
 
             LazyVerticalGrid(
-                columns = GridCells.Fixed(2),
+                columns = GridCells.Fixed(1),
                 state = state, // new
                 contentPadding = PaddingValues(bottom = 64.dp), // Add some space at the end so that FAB not hidden
                 modifier = Modifier
@@ -124,7 +124,7 @@ fun StudentScreen(
                     StudentCard(
                         student = it,
                         modifier = Modifier
-                            .padding(end = 4.dp, top = 4.dp),
+                            .padding(end = 4.dp, top = 7.dp),
                         selectAction = { student ->
                             Toast.makeText(context, "Selected ${student.firstName}", Toast.LENGTH_LONG)
                                 .show()

@@ -26,6 +26,7 @@ fun TopLevelScaffold(
         bottomBar = {
             MainPageNavigationBar(navController)
         },
+        floatingActionButton = floatingActionButton,
         content = { innerPadding ->
             pageContent(innerPadding)
         }

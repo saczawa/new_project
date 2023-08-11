@@ -16,12 +16,6 @@ fun MainPageTopAppBar(
 ){
     CenterAlignedTopAppBar(
         title = { Text(stringResource(id = R.string.app_name)) },
-        // An example of changing the default colours
-        /*colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-            containerColor = MaterialTheme.colorScheme.primary,
-            titleContentColor = MaterialTheme.colorScheme.onPrimary,
-            navigationIconContentColor = MaterialTheme.colorScheme.onPrimary
-        ),*/
         navigationIcon = {
             IconButton(onClick = onClick) {
                 Icon(
